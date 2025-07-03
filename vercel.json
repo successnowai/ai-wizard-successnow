@@ -1,0 +1,23 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev", 
+  "installCommand": "npm install",
+  "functions": {
+    "app/api/wizard/step/[projectId]/[stepNumber]/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/chat/[projectId]/[stepNumber]/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/admin/agents/[stepNumber]/route.ts": {
+      "maxDuration": 45
+    },
+    "app/api/chat/ai-response/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/upload/route.ts": {
+      "maxDuration": 120
+    }
+  }
+}
